@@ -21,14 +21,14 @@ html {
 .forms-wrapper {
   transform-style: preserve-3d;
   position: absolute;
-  top: calc(50%-17.5rem);
-  left: calc(50%-25rem);
+  top: calc(50% - 17.5rem);
+  left: calc(50% - 25rem);
   transform: rotateY(10deg);
-  perspective: 100rem;
+  transition: transform 0.5s, left 0.5s;
 }
 
 .forms-wrapper.change {
-  transform: rotateY(70deg);
+  transform: rotateY(100deg);
   left: calc(50% + 25rem);
 }
 
